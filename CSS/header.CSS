@@ -1,0 +1,216 @@
+
+*{
+    margin: 0;/*Metemos un margen 0*/
+    padding: 0;/*Metemos un padding 0*/
+    box-sizing: border-box;/*pasar el borde al tamaña de la pagina*/
+    text-decoration: none;/*sin decoracionde texto*/
+    list-style: none;/*sin listas de estilo*/
+
+}
+body{/*mandamos a llamar a el body de HTML*/
+    
+    font-family: 'Playfair', serif;/*tipo de fuente a utilizar*/
+    background-color: #faeee7;/*color de nuestro body*/
+    margin: 0;/*decimos que tenemos un margen 0 para abarcar todo el espacio abarcadeo por la pagina web*/
+}
+/*encabezado*/
+
+header{/*llamamos a la etiqueta*/
+    background-color: #f05e6a;/*color*/
+    height: 80px;/*medida*/
+    padding-bottom: 0px;/*padding abajo*/
+}
+
+.container{/*llamamos clas*/
+    max-width: 1200px;/*tamaño maximo*/
+    margin: 0px auto;/*margen automatico*/
+
+}
+
+.menu{/*llemamos a la clase menu*/
+    position: relative;/*posiciom*/
+    top: 0;/*arriba 0*/
+    left: 0;/*izquierda 0*/
+    right: 0;/*derecha 0*/
+    display: flex;/*display flexible*/ 
+    align-items: center;/*alineacion de los items al centeo*/
+    z-index: 1000;/*z index de 1000*/
+    justify-content: space-between;/*justificnado de los contenidos que se repartna de manera equitatica*/
+    
+
+}
+
+
+
+.logo{/*llamamos a la clase*/
+    display: flex;/*diseño de la caja flexible*/
+}
+
+.logo img{/*llamamos a la clase*/
+    height: 125px;/*medidas*/
+    width: 275px;/*medidas*/
+    margin: -20px 0 0 0 ;/*marfen*/
+}
+
+
+
+
+.menu .navbar ul li{/*llamamos a la clase*/
+    position: relative;/*posiicion relativa*/
+    float: left;/*ubica al eleemento al lado izuierdo*/
+    margin: -20px 0 0 0 ;/*margen*/
+
+}
+
+.menu .navbar ul li a{/*llamamos a llamra a la clase*/
+    font-size: 18px;/*tamaño letra*/
+    padding: 20px;/*padding de 20 px*/
+    color:#303030;/*color*/
+    display: block;/*bloqueamos el .display*/
+    font-weight: 600;/*tamaño*/
+}
+
+
+ li a:hover{/*llamamos a la clase*/
+   
+    
+    border-radius: 25px;/*borde deñ raddio*/
+     background-color: white;/*color que se pondra cuando pasemos el mouse encima */
+ }
+
+
+
+
+
+
+#menu{/*llammos a ña id meni*/
+    display: none;/*sin display*/
+}
+
+.menu-icono{/*llamamos a la clase*/
+    width: 25px;/*madida */
+
+}
+
+.menu label{/*llamamos a la clase*/
+    cursor: pointer;/*cursor estilo*/
+    display: none;/*quitamos la clase*/
+}
+
+
+
+@media only screen and (min-width:350px) and (max-width: 680px){/*media para la pagina responsiva*/
+
+    
+    .header{/*llamamos a la clase*/
+        max-width: auto;/*medida maxima automatioc*/
+    }
+    .menu{/*llamamos a la clase*/
+        width: auto;/*medida auto*/
+        padding: 30px;/*padding*/
+       
+
+    }
+
+   
+
+    .menu label{/*llamamos a la clase*/
+        margin: -50px 20px 0 0 ;/*margenm*/
+        display: initial;/*inicamos ell display*/
+    }
+
+    .menu .navbar{/*llamamos a la clase*/
+        position: absolute;/*posicion absoluta*/
+        top: 55%;/*arriba*/
+        left: 0;/*izquierda*/
+        right: 0;/*derecha*/
+        background-color: #545454;/*color*/
+        display: none;/*quitamos el display*/
+        padding-top: 10px;/*padding arriba*/
+    }
+
+    .menu .navbar ul li{/*llamamos a la clase*/
+        width: 100%;/*medida*/
+
+    }
+
+    .menu .navbar ul li a{/*llamamos a la clase*/
+        color: antiquewhite;/*color*/
+
+    }
+
+   
+
+
+    li a:hover{/*llamamos a la clase*/
+        background-color: #bebebe;/*color*/
+    }
+
+    #menu:checked ~ .navbar{/*llamamos a la clase*/
+        display: initial;/*iniciamos display*/
+    }
+
+    .logo{/*llamamos a la clase*/
+        margin: -30px 0px 0px -40px ;/*margen*/
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:681px) and (max-width: 800px){/*media para la pagina responsiva*/
+
+    .header{/*llamamos a la clase*/
+        max-width: auto;
+    }
+    .menu{/*llamamos a la clase*/
+        width: auto;/*medida*/
+        padding: 30px;/*padding */
+       
+
+    }
+
+   
+
+    .menu label{/*llamamos a la clase*/
+        margin: -50px 40px 0 0 ;/*margen*/
+        display: initial;/*iniciamos el display*/
+    }
+
+    .menu .navbar{/*llamamos a la clase*/
+        position: absolute;/*posocion*/
+        top: 55%;/*arrina*/
+        left: 0;/*izquierda*/
+        right: 0;/*derecha*/
+        background-color: #545454;/*color*/
+        display: none;/*quitramps*/
+        padding-top: 10px;/*padding arriba*/
+    }
+
+    .menu .navbar ul li{/*llamamos a la clase*/
+        width: 100%;/*tamaño*/
+
+    }
+
+    .menu .navbar ul li a{/*llamamos a la clase*/
+        color: antiquewhite;/*color*/
+
+    }
+
+   
+
+
+    li a:hover{/*llamamos a la clase*/
+        background-color: #bebebe;/*color*/
+    }
+
+    #menu:checked ~ .navbar{/*llamamos a la clase*/
+        display: initial;/*le decimos que inicie la accion*/
+    }
+
+    .logo{/*llamamos a la clase*/
+        margin: -30px 0px 0px -40px ;/*margen*/
+    }
+
+}

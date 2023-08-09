@@ -1,0 +1,181 @@
+
+
+.descripcion{/*llamamos a la clase*/
+    text-align: center;/*tecto alineado al centro*/
+}
+
+.products{/*llamamos a la clase*/
+    padding: 10px 0;/*padding*/
+    text-align: center;/*texto alineado al centro*/
+
+}
+
+h1{/*llamamos a la clase*/
+    font-size: 40px;/*tmaño letra*/
+    color: #303030;/*color*/
+}
+
+.products h2{/*llamamos a la clase*/
+    font-size: 45px;/*tamaño de letra*/
+    color: #303030;/*color de letra*/
+    margin-bottom: 30px;/*margen para abajo*/
+
+}
+
+
+.products p{/*llamamos a la clase*/
+    font-size: 18px;/*tamaño de lrtra*/
+    color: #545454;/*color letra*/
+    margin-bottom: 40px;/*margen para abajo*/
+    padding: 0 20px;/*padding */
+
+}
+
+.product-info{/*llamamos a la clase*/
+    display: grid;/*para ver la informacion en una sola columna */
+    grid-template-columns: repeat(4,1fr);/*columnas en las que se va a dividri*/
+    grid-auto-rows: auto;/*tamaño de la fila*/
+    grid-gap: 3rem;/*espacio entre las filas*/
+}
+
+.product{/*llamamos a la clase*/
+    padding-bottom: 35px;/*padding para abajo*/
+    text-align: center;/*texto alineado al centr*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);/*sombras */
+    border-radius: 25px;/*redondeamos las esquinas*/
+}
+
+
+.product img{/*llamamos a la clase*/
+    width: 100%;/*tamaño*/
+    height: 325px;/*tamaño*/
+    border-radius: 25px 25px 0 0 ;/*redondemaos algunas esquinas*/
+
+}
+
+.product h3{/*llamamos a la clase*/
+    font-size: 20px;/*tamaño letra*/
+    color: black;/*color*/
+    margin-top: 15px;/*margen arriba*/
+
+}
+
+.product p {/*llamamos a la clase*/
+    font-size: 16px;/*tamaño letra*/
+    padding: 30px;/*paddin espacio*/
+    color: #545454;/*color*/
+    margin: 0;/*margen de 0*/
+}
+
+.product span{/*llamamos a la clase*/
+    background-color: #ff9f0d;/*color fondo*/
+    padding: 10px;/*padding espcio*/
+    color: aliceblue;/*color*/
+    border-radius: 15px;/*redondeamos esquinas*/
+}
+
+
+@media only screen and (min-width:360px) and (max-width: 519px){/*media para la pagina responsiva*/
+   
+
+        
+
+        .descripcion{/*llamamos a la clase*/
+            width: auto;/*medida automarica*/
+            
+        }
+        
+    .products{/*llamamos a la clase*/
+        padding: 30px;/*padding*/
+        text-align: center;/*tecto alineado al centro*/
+
+    }
+
+    .products h2{/*llamamos a la clase*/
+        font-size: 40px;/*tamaño de letra*/
+    }
+
+    .products p {/*llamamos a la clase*/
+        padding: 0;/*padding*/
+        margin-bottom: 40px;/*margen hacia atras*/
+
+    }
+
+    .product-info{/*llamamos a la clase*/
+        grid-template-columns: repeat(1,1fr);/*como se van a repartir las columnas*/
+    }
+
+    .product p{/*llamamos a la clase*/
+    padding: 30px;/*padding*/
+    }
+}
+
+@media only screen and (min-width:520px) and (max-width: 764px){/*media para la pagina responsiva*/
+    
+
+    .descripcion{/*llamamos a la clase*/
+        width: auto;/*medida automativo*/
+        
+    }
+    
+.products{/*llamamos a la clase*/
+    padding: 30px;/*padding*/
+    text-align: center;/*texto alineaod al centor*/
+
+}
+
+.products h2{/*llamamos a la clase*/
+    font-size: 40px;/*tamalo letra*/
+}
+
+.products p {/*llamamos a la clase*/
+    padding: 0;/*padding*/
+    margin-bottom: 40px;/*margen hacia abajo*/
+
+}
+
+.product-info{/*llamamos a la clase*/
+    grid-template-columns: repeat(2,1fr);/*como se van a repartir las columnas*/
+}
+
+.product p{/*llamamos a la clase*/
+padding: 30px;/*padding*/
+}
+
+
+}
+
+@media only screen and (min-width:765px) and (max-width: 1100px){/*media para la pagina responsiva*/
+   
+
+    .descripcion{/*llamamos a la clase*/
+        width: auto;/*medida automatica*/
+        
+    }
+    
+.products{/*llamamos a la clase*/
+    padding: 30px;/*padding*/
+    text-align: center;/*texto alineado a centro*/
+
+}
+
+.products h2{/*llamamos a la clase*/
+    font-size: 40px;/*tamaño de letra*/
+}
+
+.products p {/*llamamos a la clase*/
+    padding: 0;/*pading*/
+    margin-bottom: 40px;/*margen abajo*/
+
+}
+
+.product-info{/*llamamos a la clase*/
+    grid-template-columns: repeat(3,1fr);/*como se van a repartir las columnas*/
+}
+
+.product p{/*llamamos a la clase*/
+padding: 30px;/*padding*/
+}
+
+
+}

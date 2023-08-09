@@ -1,0 +1,120 @@
+
+main{/*LLAMAMOS A LA ETIQUETA MENU*/
+    padding-top: 20px;/*padding hacia arriba*/
+}
+
+.formulario{/*llamamos a la clase */
+    padding-top: 20px;/*padding en la parte de arriba */
+}
+
+.form{/*llamamos a la clase */
+    background-color: aliceblue;/* color */
+    margin: auto;/* margen automatico */
+    width: 90%;/* medida */
+    max-width: 400px;/* medida maxima */
+    padding: 4.5em 3em;/* padding em que es el temaño de la letra dada por el navegador o programador */
+    border-radius: 10px;/* radio del borde */
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30% );/* sombras, 30% es como el degradado */ 
+    text-align: center;/* texto alineado al centro */
+}
+
+.form_title{/*llamamos a la clase */
+    font-size: 2rem;/* tamaño letra en rem que es el el tamaño de la letra del elemenrot raiz */
+    margin-bottom: .5em;/* margen hacia abajo*/
+
+}
+
+.form_parrafo{/*llamamos a la clase */
+    font-weight: 300;/* tamaño fuente de 300 */
+}
+
+.form_container{/*llamamos a la clase */
+    margin-top: 3em;/* margen arriba */
+    display: grid;/* display para que se muestre en una sola columna */
+    gap: 2.5em;/* espacio que hay entre las opciones  */
+}
+
+.form_group{/*llamamos a la clase */
+    position: relative;/* posision relativa */
+    --color: #5757577e;/* realizamos una variablr llamada color y le asignamos un color */
+    font-family: 'Rubik', sans-serif;/*tipo de fuente a utilizar*/
+
+}
+
+.form_input{/*llamamos a la clase */
+    width: 100%;/* mmedidas */
+    background: none;/* decimos que no debe de haber ninguan imagen en el fondo */
+    color: #706c6c;/*  color*/
+    font-size: 1rem;/* tamaño de letra. */
+    padding: .6em .3em;/* padding */
+    border: none;/* sin borde */
+    outline: none;/* sin linea */
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;/*tipo de fuente a utilizar*/
+
+}
+
+.form_input:focus + .form_label , /*llamamos a la clase  cuando pase el cursor encima el campo hara una translacion*/
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(1);/* transformacion transladandose en Y y a una escala de 1 */
+    transform-origin: left top;/* tranformacion arriba a la derecha */
+    color: #010512;/* color */
+    
+
+}
+
+.form_label{/*llamamos a la clase */
+    color: var(--color);/*color llamando a la variable*/
+    cursor: pointer;/* cursor de la manita*/
+    position: absolute;/*posicion absoluta  */
+    top: 0;/*arriba 0 */
+    left: 5px;/*por la derecha 5px */
+    transform: translateY(10px);/* transformacion transladnadose en y 10px*/
+    transition: transform .5, color .3s/*transformacion de .5 con un color con .3 segundos de tiempo para subir  */
+}
+
+.form_submit{/*llamamos a la clase */
+    background: #3866f2;/*color*/
+    font-family: 'Roboto', sans-serif;/*tipo de fuente a utilizar*/
+    font-weight: 300;/*estilo .letra*/
+    font-size: 1rem;/*tamaño letra*/
+    padding: .8em 0;/*padding*/
+    border: none;/*sin borde*/
+    border-radius: .5em;/*radio del borde*/
+}
+
+.form_line{/*llamamos a la clase */
+    position: absolute;/*posicion*/
+    bottom: 0;/*abajo*/
+    left: 0;/*izquierda*/
+    width: 100%;/*medida*/
+    height: 1px;/*medida*/
+    background-color: #3866f2;/*color*/
+}
+
+.conta{/*llamamos a la clase */
+    
+    margin-right: 10px;/*margen derecha*/
+    
+}
+.contactar{/*llamamos a la clase */
+    padding-bottom: 15px;/*padding abajo*/
+}
+.opciones{/*llamamos a la clase */
+    
+    width: 150px;/*meida*/
+    height: 30px;/*medida*/
+    background-color: aliceblue;/*color*/
+    text-align: center;/*alineacion de texto */
+}
+
+
+
+
+
+@media(max-width: 425px){/*media */
+
+    .form_title{/*llamamos a la clase para media*/
+        font-size: 1.8rem;/*tamaño letra*/
+    }
+}

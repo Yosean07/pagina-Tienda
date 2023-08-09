@@ -1,0 +1,72 @@
+
+
+.principal{/*llamamos a la clase*/
+    padding: 2em 0;/*cantidad de espacion que hay en el borde*/
+    background: #faeee7;/*color de fondo*/
+    width: 1050px;/*medidas*/
+    margin: 0 auto;/*margen de la clase*/
+    font-size: 17px;/*tamaño de la ñetra*/
+}
+
+.sobre{/*llamamos a la clase*/
+    text-align: center;/*texto alineado al centro*/
+    font-style: italic;/*estilo de la letra*/
+
+}
+
+
+.presentacion{/*llamamos a la clase*/
+    width: 170px;/*medidas*/
+    height: 180px;/*medidas*/
+    float: left;/*ubicacion del elemento a la izquierda*/
+    margin: 0 20px 20px 25px;/*margen de la clase */
+    border-radius: 10px;/*nos permite redondear los borde*/
+}
+
+.ubicacion,.descrip{/*llamamos a la clase*/
+    padding: 10px;
+    text-align: justify;/*texto justifiaco*/
+}
+
+
+.mapa{/*llamamos a la clase*/
+    padding: 3em 0;/*cantidad de espacion que hay en el borde*/
+    background: linear-gradient(#faeee7,#f05e6a);/*color de fondo*/
+}
+
+
+
+.mapa{/*llamamos a la clase*/
+    padding: 3em 0;/*cantidad de espacion que hay en el borde*/
+    font-size: 17px;/*tamaño de la letra*/
+}
+
+.mapa p{/*llamamos a la clase*/
+    margin: 0 0 20px;/*margen de la clase*/
+    text-align: center;/*texto alineado al cetro*/
+}
+
+.mapa-contenido{/*llamamos a la clase*/
+    width: 940px;/*medidas*/
+    margin: 0 auto;/*margen clase*/
+}
+
+    
+@media(max-width: 991px){/*media para la pagina responsiva*/
+
+   
+
+    .principal {/*llamamos a la clase*/
+        width: auto;/*medida automatica*/
+    }
+
+    .presentacion{/*llamamos a la clase*/
+        margin: 10px 10px 0px 10px;/*margen.*/
+        width: 35%;/*medida*/
+        height: 40%;/*medida*/
+    }
+
+    .mapa-contenido{/*llamamos a la clase*/
+        width: auto;/*medida*/
+    }
+}
