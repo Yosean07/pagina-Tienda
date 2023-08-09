@@ -1,0 +1,187 @@
+
+.titulo-productos{/*llamamos a la clase*/
+    padding: 20px 0 0px 0px;/*cantidad de espacion que hay en el borde*/
+    background: #faeee7;/*COLOR DE FONDO*/
+    width: 100%;/*MEDIDAS*/
+    margin: 0 auto;/*MARGEN*/
+    font-size: 30px;/*TAMALA DEL TEXTO*/
+    text-align: center;/*ALINEAMOS EL TEXTO AL CENTRO*/
+    color: #594a4e;/*COLOR DE LA LETRA*/
+}
+
+
+
+.img-genero{/*llamamos a la clase*/
+    width: 120px;/*MEDIDAS*/
+}
+
+
+
+.product1{
+    display: inline-block;/*DISEÑO DE LA CAJA BLOQUEADO*/
+    text-align: center;/*TEXTO ALINEADO AL CENTRO*/
+    width: 250px;/*MEDIDAS*/
+    vertical-align: top;/*ALINEACION VERTICAL HACIA ARRIBA*/
+    margin: 0 1.5%;/*MARGEN*/
+    padding: 30px 20px;/*cantidad de espacion que hay en el borde*/
+    box-sizing: border-box;/*HACE QUE PADDING Y EL BORDER PASEN A FROMAR PARTE DEL CALCULO DEL ANCHO DE LA CAJA Y NO LO SUMA POSTERIORMENTE*/
+    border-color: black;/*COLOR DEL BORDE*/
+    border-width: 2px;/*MEDIDAD EL BORDE*/
+    border-style: solid;/*ESTILO DE BORDE SOLIDO*/
+    font-size: 30px;/*TAMAÑO DE LA LETRA*/
+    background-color: #ecdfd7;/*COLOR DE FONDo*/
+    color: #594a4e;/*COLOR DE LALETRA*/
+
+    border-radius: 15px;/*NOS PERMITE REDONDEAR LOS BORDES*/
+}
+
+.product1:hover{/*llamamos a la clase*/
+    border-color: rgb(51, 131, 235);/*COLOR DEL BORDE CUANDO PASA EL MOUSE ENCIMA DE EL */
+    
+}
+
+.product1:active{/*llamamos a la clase*/
+    border-color: #088c19;/*COLOR DEL BORDE CUANDO EL MOUSE DA CLIC EN EL*/
+}
+
+.product1 h2{/*llamamos a la clase*/
+    font-size: 20px;/*TAMAÑO DE LA LETRA*/
+    font-weight: bold;/*LETRAS EN NEGRITAS*/
+}
+
+.product1:hover h2{/*llamamos a la clase*/
+    font-size: 30px;/*TAMAÑO DE LA LETRA*/
+    
+}
+
+
+
+
+
+
+
+
+.direccionamiento{/*llamamos a la clase*/
+    color: #594a4e;/*COLOR DE LA ÑETRA*/
+    font-family: 'Playfair', serif;/*FUENTE A UTILIZA*/
+
+}
+
+
+.product1-info{/*llamamos a la clase*/
+    
+    display: grid;/*para ver la informacion en una sola columna */
+    grid-template-columns: repeat(4,1fr);/*columnas en las que se va a dividri*/
+    grid-auto-rows: auto;/*tamaño de la fila*/
+    grid-gap: 3rem;/*espacio entre las filas*/
+
+    width: 60%;/*medida al 60&*/
+    margin: 0 auto;/*margen automatico y 0*/
+
+
+}
+
+
+.product1{/*llamamos a la clase*/
+    padding-bottom: 35px;/*padding para abajo*/
+    text-align: center;/*texto alineado al centr*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);/*sombras */
+    border-radius: 25px;/*redondeamos las esquinas*/
+}
+
+
+
+
+.img-genero, .img-gorrito{/*llamamos a la clase*/
+    width: 200px;/*MEDIDAS*/
+}
+
+
+
+
+@media only screen and (min-width:350px) and (max-width: 680px){/*media para la pagina responsiva*/
+
+    .titulo-productos{/*llamamos a la clase*/
+        padding-bottom: 50px;/* padding abajo*/
+        width: auto;/*medida automatica */
+        font-size: 25px;/*nmedida de la letra */
+        text-align: center;/*texto alineado al centro */
+    }
+    .product1-info {/*llamamos a la clase*/
+        margin-right: 70px;/* margen a la derecha*/
+        justify-content: center;/* contenido justificado al centro*/
+
+        grid-template-columns: repeat(1,1fr);/*columnas en las que se va a dividri*/
+      }
+
+
+    .product1{/*llamamos a la clase*/
+        margin-bottom: 35px;/*margen abajo */
+        
+        
+        
+        grid-template-columns: repeat(1,1fr);/*columnas en las que se va a dividri*/
+    }
+
+
+}
+
+@media only screen and (min-width:681px) and (max-width: 800px){/*media para la pagina responsiva*/
+
+
+    .titulo-productos{/*llamamos a la clase*/
+        padding-bottom: 50px;/*margen abajo*/
+        width: auto;/*tamaño automaticp*/
+        font-size: 28px;/*medida de la letra*/
+        text-align: center;/*tecto alineado al centeo*/
+    }
+
+    .product1-info {/*llamamos a la clase*/
+        margin-right: 70px;/*margen derecha*/
+        justify-content: center;/*contenidp justificado a la derecha*/
+
+        grid-template-columns: repeat(1,1fr);/*columnas en las que se va a dividri*/
+      }
+
+}
+
+@media only screen and (min-width:801px) and (max-width: 1100px){/*media para la pagina responsiva*/
+
+    
+   
+
+
+    .titulo-productos{/*llamamos a la clase*/
+        padding-bottom: 50px;/*padding abajo*/
+        width: auto;/*meida automatico*/
+        font-size: 30px;/*medida de la letra*/
+        text-align: center;/*tecto alineado al centor*/
+    }
+
+    .product1{/*llamamos a la clase*/
+        width: 220px;/*medida*/
+    }
+
+    .img-genero{/*llamamos a la clase*/
+        width: 110px;/*MEDIDAS*/
+    }
+    .product1-info {/*llamamos a la clase*/
+
+        margin: 0;/*margen */
+
+        margin-left: 165px;/*margen a la derecha*/
+       
+        justify-content: center;/*contenido justificadp*/
+
+        grid-template-columns: repeat(3,1fr);/*columnas en las que se va a dividri*/
+      }
+
+
+
+
+}
+
+
+
+
+
